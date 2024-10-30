@@ -1,0 +1,25 @@
+[
+    {
+        "name": "Swish Original",
+        "slug": "swish-original",
+        "description": "Designed with love for the game, made with quality materials! Enjoy indoor and outdoor play, the soft touch and firm grip will make sure you do! The Swish Original model is inspired by the Harlem Globetrotters ball and the NBA 3pt contest Money Ball, which in turn represents the original ABA ball. It comes in all sizes (Men, Women, Youth, Baby). The Guide Line option helps you improve your shot (check Videos Section)!<br><br>Show your ball love, and it will love you back! Take care of it by cleaning it as often as possible. Check related video in the Videos Section for instructions.",
+        "image": "media/products/swish-original.jpg",
+        "secondImage": "media/products/swish-original-guide-line.jpg",
+        "link": "/product.html?product=swish-original",
+        "features": {
+            "Material" : "Composite leather",
+            "Technology" : "Moisture management technology",
+            "Seams" : "Deep channel seams",
+            "Bladder" : "Rotationally balanced bladder",
+            "Play Type" : "Indoor and outdoor play",
+            "Craftmanship" : "Made with true love for the game",
+            "Marking" : "With Guide Line, Without Guide Line"
+        },
+        "sizes" : [
+            "Men size 7, 29.5”",
+            "Women/Youth size 6, 28.5”",
+            "Youth size 5, 27.5”",
+            "Baby size 1, 16"
+        ]
+    }
+]

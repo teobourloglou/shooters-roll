@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Έξυπνες λύσεις για εξοπλισμό Συνεργείου.">
+
+    <title>Shooter's Roll</title>
+
+    <link rel="stylesheet" href="./input.css">
+    <link rel="stylesheet" href="./dist/output.css">
+    <link rel="preconnect" href="https://fonts.bunny.net">
+    <link href="https://fonts.bunny.net/css?family=ubuntu:300,400,500,700" rel="stylesheet" />
+
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script src="./app.js"></script>
+
+</head>
+<body>
+    <body x-data="fetchProducts()" x-init="loadData" class="font-ubuntu bg-gradient-to-b from-gray-200 via-gray-400 to-gray-600">
+        <div id="header"></div>
+        <div id="hero"></div>
+        <div id="products"></div>
+        <div id="footer"></div>
+    </body>
+    <script>
+        fetchComponents([
+            { name: "header",       elementId: "header"         },
+            { name: "hero",         elementId: "hero"           },
+            { name: "products",     elementId: "products"       },
+            { name: "footer",       elementId: "footer"         },
+        ]);
+    </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Shooter's Roll</title>
+
+    <link rel="stylesheet" href="./input.css">
+    <link rel="stylesheet" href="./dist/output.css">
+    <link rel="preconnect" href="https://fonts.bunny.net">
+    <link href="https://fonts.bunny.net/css?family=ubuntu:300,400,500,700" rel="stylesheet" />
+    
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    
+    <script src="./app.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body x-data="fetchProduct()" x-init="loadData" class="font-ubuntu">
+    <div id="product-hero"
+        class="bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-neutral-300 to-white"
+    >
+        <div id="header"></div>    
+        <div id="top"></div>
+    </div>
+    <div id="features"></div>
+    <div id="functions"></div>
+    <div id="files"></div>
+    <div id="cta"></div>
+    <div id="footer"></div>
+    
+    <script>
+        fetchComponents([
+            { name: "header",           elementId: "header"         },
+            { name: "top",              elementId: "top"            },
+            { name: "features",         elementId: "features"       },
+            { name: "functions",        elementId: "functions"      },
+            { name: "files",            elementId: "files"          },
+            { name: "cta",              elementId: "cta"            },
+            { name: "footer",           elementId: "footer"         },
+        ]);
+    </script>
+</body>
+</html>
