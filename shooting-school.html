@@ -21,21 +21,17 @@
 </head>
 <body>
     <body x-data="fetchProducts()" x-init="loadData" class="font-ubuntu ">
-        <div x-data="{ modalOpen : false }" class="bg-gradient-to-b from-zinc-200 via-zinc-400 to-zinc-600">
+        <div x-data="{ modalOpen : false }" class="bg-gradient-to-b from-zinc-200 via-zinc-400 to-zinc-400">
             <div id="header"></div>
-            <div id="hero"></div>
-            <div id="vision"></div>
+            <div id="school"></div>
             <div id="modal"></div>
         </div>
-        <div id="products"></div>
         <div id="footer"></div>
     </body>
     <script>
         fetchComponents([
             { name: "header",       elementId: "header"         },
-            { name: "hero",         elementId: "hero"           },
-            { name: "vision",       elementId: "vision"         },
-            { name: "products",     elementId: "products"       },
+            { name: "school",       elementId: "school"         },
             { name: "footer",       elementId: "footer"         },
             { name: "modal",        elementId: "modal"          },
         ]);

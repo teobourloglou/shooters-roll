@@ -1,56 +1,55 @@
-  <header class="absolute inset-x-0 top-0 z-50">
+  <header x-data="{ open : false }" class="absolute inset-x-0 top-0 z-50">
     <nav class="flex items-center justify-between p-6 mx-auto lg:px-8 max-w-7xl" aria-label="Global">
       <div class="flex lg:flex-1">
-        <a href="#" class="-m-1.5 p-1.5">
+        <a href="/" class="-m-1.5 p-1.5">
           <span class="sr-only">Shooter's Roll</span>
-          <img class="w-auto h-10" src="/media/logo.png" alt="">
+          <img class="w-auto h-10" src="/media/black-logo.png" alt="">
         </a>
       </div>
       <div class="flex lg:hidden">
-        <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+        <button @click="open = true" type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-zinc-700">
           <span class="sr-only">Open main menu</span>
-          <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-          </svg>
+          <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-menu"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 8l16 0" /><path d="M4 16l16 0" /></svg>
         </button>
       </div>
       <div class="hidden lg:flex lg:gap-x-12">
-        <a href="#" class="font-semibold text-gray-900 text-sm/6">Basketballs</a>
-        <a href="#" class="font-semibold text-gray-900 text-sm/6">Camps/Clinics</a>
-        <a href="#" class="font-semibold text-gray-900 text-sm/6">Shooting Training</a>
-        <a href="#" class="font-semibold text-gray-900 text-sm/6">About</a>
+        <a href="/basketballs" class="font-semibold text-zinc-900 text-sm/6">Basketballs</a>
+        <a href="/camps-clinics" class="font-semibold text-zinc-900 text-sm/6">Camps/Clinics</a>
+        <a href="/shooting-school" class="font-semibold text-zinc-900 text-sm/6">Shooting School</a>
+        <a href="/about" class="font-semibold text-zinc-900 text-sm/6">About</a>
       </div>
       <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-        <a href="#" class="px-6 py-1 font-semibold text-white bg-gray-900 rounded-xl text-sm/6">Contact</span></a>
+        <button @click="modalOpen = true" class="px-6 py-1 font-semibold text-white bg-zinc-900 rounded-xl text-sm/6">Contact</button>
       </div>
     </nav>
     <!-- Mobile menu, show/hide based on menu open state. -->
     <div class="lg:hidden" role="dialog" aria-modal="true">
       <!-- Background backdrop, show/hide based on slide-over state. -->
-      <div class="fixed inset-0 z-50"></div>
-      <div class="fixed inset-y-0 right-0 z-50 w-full px-6 py-6 overflow-y-auto bg-white sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+      <div x-show="open" class="fixed inset-0 z-50"></div>
+      <div x-show="open" class="fixed inset-y-0 right-0 z-50 w-full px-6 py-6 overflow-y-auto bg-black sm:max-w-sm sm:ring-1 sm:ring-zinc-900/10" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 scale-90" x-transition:enter-end="opacity-100 scale-100" x-transition:leave="transition ease-in duration-300" x-transition:leave-start="opacity-100 scale-100" x-transition:leave-end="opacity-0 scale-90">
         <div class="flex items-center justify-between">
-          <a href="#" class="-m-1.5 p-1.5">
+          <a href="/" class="-m-1.5 p-1.5">
             <span class="sr-only">Your Company</span>
-            <img class="w-auto h-8" src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=600" alt="">
+            <img class="w-auto h-8" src="/media/white-logo.png" alt="">
           </a>
-          <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
+          <button @click="open = false" type="button" class="-m-2.5 rounded-md p-2.5 text-zinc-100">
             <span class="sr-only">Close menu</span>
             <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
               <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
             </svg>
           </button>
         </div>
-        <div class="flow-root mt-6">
-          <div class="-my-6 divide-y divide-gray-500/10">
-            <div class="py-6 space-y-2">
-              <a href="#" class="block px-3 py-2 -mx-3 font-semibold text-gray-900 rounded-lg text-base/7 hover:bg-gray-50">Product</a>
-              <a href="#" class="block px-3 py-2 -mx-3 font-semibold text-gray-900 rounded-lg text-base/7 hover:bg-gray-50">Features</a>
-              <a href="#" class="block px-3 py-2 -mx-3 font-semibold text-gray-900 rounded-lg text-base/7 hover:bg-gray-50">Marketplace</a>
-              <a href="#" class="block px-3 py-2 -mx-3 font-semibold text-gray-900 rounded-lg text-base/7 hover:bg-gray-50">Company</a>
+        <div class="flow-root mt-12">
+          <div class="-my-6 divide-y divide-zinc-500/10">
+            <div class="py-6 space-y-6">
+              <a @click="open = false" href="/" class="block font-semibold text-zinc-100 text-base/7">Home</a>
+              <a @click="open = false" href="/basketballs" class="block font-semibold text-zinc-100 text-base/7">Basketballs</a>
+              <a @click="open = false" href="/camps-clinics" class="block font-semibold text-zinc-100 text-base/7">Camps/Clinics</a>
+              <a @click="open = false" href="/shooting-school" class="block font-semibold text-zinc-100 text-base/7">Shooting School</a>
+              <a @click="open = false" href="/about" class="block font-semibold text-zinc-100 text-base/7">About</a>
             </div>
             <div class="py-6">
-              <a href="#" class="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Log in</a>
+              <button type="button" @click="modalOpen = true; open = false" class="block font-semibold text-zinc-100 text-base/7">Contact</button>
             </div>
           </div>
         </div>

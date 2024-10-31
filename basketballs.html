@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Give 18 minutes of attention, gain a lifetime of knowledge!!!">
+
+    <title>Shooter's Roll</title>
+
+    <link rel="stylesheet" href="./input.css">
+    <link rel="stylesheet" href="./dist/output.css">
+    <link rel="preconnect" href="https://fonts.bunny.net">
+    <link href="https://fonts.bunny.net/css?family=ubuntu:300,400,500,700" rel="stylesheet" />
+
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+
+    <script src="./app.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body x-data="fetchProduct()" x-init="loadData" class="font-ubuntu">
+    <div x-data="{ modalOpen : false }" class="bg-gradient-to-b from-zinc-200 via-zinc-400 to-zinc-600">
+        <div id="header"></div>
+        <div id="product-handling"></div>
+        <div id="overview"></div>
+        <div id="features"></div>
+        <div id="cta"></div>
+        <div id="footer"></div>
+        <div id="modal"></div>
+    </div>
+
+    <script>
+        fetchComponents([
+            { name: "header",           elementId: "header"             },
+            { name: "product-handling", elementId: "product-handling"   },
+            { name: "overview",         elementId: "overview"           },
+            { name: "features",         elementId: "features"           },
+            { name: "cta",              elementId: "cta"                },
+            { name: "footer",           elementId: "footer"             },
+            { name: "modal",            elementId: "modal"              },
+        ]);
+    </script>
+</body>
+</html>

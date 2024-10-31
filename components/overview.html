@@ -1,0 +1,86 @@
+<template x-if="productFound">
+  <main>
+    <!-- Product -->
+    <div x-data="{ guideLine : false }">
+      <div class="max-w-2xl px-4 py-24 mx-auto sm:px-6 sm:py-32 lg:grid lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
+
+        <!-- Product image -->
+        <div class="mt-10 lg:order-2 lg:row-span-2 lg:mt-0 lg:self-center">
+          <div class="overflow-hidden rounded-xl aspect-h-1 aspect-w-1">
+            <img :src="guideLine ? product.secondImage : product.image " alt="Product Image" class="object-cover object-center w-full h-full">
+          </div>
+        </div>
+
+        <!-- Product details -->
+        <div class="lg:max-w-lg">
+
+          <div class="mt-4">
+            <h1 x-text="product.name" class="text-3xl font-bold tracking-tight text-zinc-900 sm:text-4xl"></h1>
+          </div>
+
+          <section aria-labelledby="information-heading" class="mt-4">
+            <h2 id="information-heading" class="sr-only">Product information</h2>
+
+            <div class="mt-4 space-y-6">
+              <p x-html="product.description" class="text-base text-zinc-500"></p>
+            </div>
+
+            <div class="flex items-center mt-6">
+              <svg class="flex-shrink-0 w-5 h-5 text-green-500" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
+              </svg>
+              <p class="ml-2 text-sm text-zinc-500">In stock and ready to ship</p>
+            </div>
+          </section>
+
+          <div class="mt-6">
+
+            <p class="text-base font-medium text-zinc-900">Sizes</p>
+            <div class="prose-sm prose text-zinc-500">
+              <ul role="list" class="flex flex-col items-start w-full mt-2 gap-y-2">
+                <template x-for="size in product.sizes">
+                  <li class="flex items-center justify-between w-full">
+                    <p x-text="size" class="text-sm text-zinc-500"></p>
+                  </li>
+                </template>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product form -->
+        <div class="mt-10 lg:col-start-1 lg:row-start-2 lg:max-w-lg lg:self-start">
+          <section aria-labelledby="options-heading">
+            <h2 id="options-heading" class="sr-only">Product options</h2>
+
+              <div class="sm:flex sm:justify-between">
+                <fieldset>
+                  <div class="grid grid-cols-1 gap-4 mt-1 sm:grid-cols-2">
+
+                    <div @click="guideLine = false" aria-label="Without Guide Line" aria-description="The classic basketball." class="relative block p-4 border cursor-pointer border-zinc-300 rounded-xl focus:outline-none" x-bind:class="guideLine ? '' : 'ring-2 ring-zinc-700'">
+                      <input x-model="guideLine" type="radio" value="true" class="sr-only">
+                      <p class="text-base font-medium text-zinc-900">Without Guide Line</p>
+                      <p class="mt-1 text-sm text-zinc-500">The classic basketball.</p>
+                      <div class="absolute border-2 pointer-events-none rounded-xl -inset-px" aria-hidden="true"></div>
+                    </div>
+
+                    <div @click="guideLine = true" aria-label="With Guide Line" aria-description="Helps you improve your shot." class="relative block p-4 border cursor-pointer border-zinc-300 rounded-xl focus:outline-none" x-bind:class="guideLine ? 'ring-2 ring-zinc-700' : ''">
+                      <input x-model="guideLine" type="radio" value="false" class="sr-only">
+                      <p class="text-base font-medium text-zinc-900">With Guide Line</p>
+                      <p class="mt-1 text-sm text-zinc-500">Helps you improve your shot.</p>
+                      <div class="absolute border-2 pointer-events-none rounded-xl -inset-px" aria-hidden="true"></div>
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+
+              <div class="mt-10">
+                <a href="mailto:info@shootersroll.gr" class="flex items-center justify-center w-full px-8 py-3 text-base font-medium text-center text-white border border-transparent bg-zinc-900 rounded-xl hover:bg-zinc-800 focus:outline-none focus:ring-2 focus:ring-zinc-500 focus:ring-offset-2 focus:ring-offset-zinc-50">Want one? Contact us at info@shootersroll.gr</a>
+              </div>
+          </section>
+        </div>
+      </div>
+    </div>
+
+  </main>
+</template>

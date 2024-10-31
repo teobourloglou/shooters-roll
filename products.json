@@ -5,21 +5,194 @@
         "description": "Designed with love for the game, made with quality materials! Enjoy indoor and outdoor play, the soft touch and firm grip will make sure you do! The Swish Original model is inspired by the Harlem Globetrotters ball and the NBA 3pt contest Money Ball, which in turn represents the original ABA ball. It comes in all sizes (Men, Women, Youth, Baby). The Guide Line option helps you improve your shot (check Videos Section)!<br><br>Show your ball love, and it will love you back! Take care of it by cleaning it as often as possible. Check related video in the Videos Section for instructions.",
         "image": "media/products/swish-original.jpg",
         "secondImage": "media/products/swish-original-guide-line.jpg",
-        "link": "/product.html?product=swish-original",
-        "features": {
-            "Material" : "Composite leather",
-            "Technology" : "Moisture management technology",
-            "Seams" : "Deep channel seams",
-            "Bladder" : "Rotationally balanced bladder",
-            "Play Type" : "Indoor and outdoor play",
-            "Craftmanship" : "Made with true love for the game",
-            "Marking" : "With Guide Line, Without Guide Line"
-        },
-        "sizes" : [
+        "secondIecondImage": "media/products/swish-original-guide-line.jpg",
+        "link": "/basketballs?product=swish-original",
+        "features": [
+            {
+                "title" : "Material",
+                "value" : "Composite leather"
+            },
+            {
+                "title" : "Technology",
+                "value" : "Moisture management technology"
+            },
+            {
+                "title" : "Seams",
+                "value" : "Deep channel seams"
+            },
+            {
+                "title" : "Bladder",
+                "value" : "Rotationally balanced bladder"
+            },
+            {
+                "title" : "Play Type",
+                "value" : "Indoor and outdoor play"
+            },
+            {
+                "title" : "Craftmanship",
+                "value" : "Made with true love for the game"
+            }
+        ],
+        "sizes": [
             "Men size 7, 29.5”",
             "Women/Youth size 6, 28.5”",
             "Youth size 5, 27.5”",
             "Baby size 1, 16"
+        ]
+    },
+    {
+        "name": "Central District",
+        "slug": "central-district",
+        "description": "Designed with love for the game, made with quality materials! Enjoy indoor and outdoor play, the soft touch and firm grip will make sure you do! The Central District model’s classic light orange design is inspired by the mid/late 1980’s European leagues and tournaments. The basketball’s nickname back then was “The Orange Goddess”. It comes in Men’s size 7, more sizes coming soon. The Guide Line option helps you improve your shot (check Videos Section)!<br><br>Show your ball love, and it will love you back! Take care of it by cleaning it as often as possible. Check related video in the Videos Section for instructions.",
+        "image": "media/products/central-district.jpg",
+        "secondImage": "media/products/central-district-guide-line.jpg",
+        "secondIecondImage": "media/products/central-district-guide-line.jpg",
+        "link": "/basketballs?product=central-district",
+        "features": [
+            {
+                "title" : "Material",
+                "value" : "Composite leather"
+            },
+            {
+                "title" : "Technology",
+                "value" : "Moisture management technology"
+            },
+            {
+                "title" : "Seams",
+                "value" : "Deep channel seams"
+            },
+            {
+                "title" : "Bladder",
+                "value" : "Rotationally balanced bladder"
+            },
+            {
+                "title" : "Play Type",
+                "value" : "Indoor and outdoor play"
+            },
+            {
+                "title" : "Craftmanship",
+                "value" : "Made with true love for the game"
+            }
+        ],
+        "sizes": [
+            "Men size 7, 29.5”",
+            "More sizes coming soon"
+        ]
+    },
+    {
+        "name": "Game Time",
+        "slug": "game-time",
+        "description": "Designed with love for the game, made with quality materials! Enjoy indoor and outdoor play, the soft touch and firm grip will make sure you do! The Game Time model’s classic dark brown design is inspired by the Golden Era’s NBA and NCAA basketballs. Serious and straight to the point. It comes in Men’s size 7, more sizes coming soon. The Guide Line option helps you improve your shot (check Videos Section)!<br><br>Show your ball love, and it will love you back! Take care of it by cleaning it as often as possible. Check related video in the Videos Section for instructions.",
+        "image": "media/products/game-time.jpg",
+        "secondImage": "media/products/game-time-guide-line.jpg",
+        "secondIecondImage": "media/products/game-time-guide-line.jpg",
+        "link": "/basketballs?product=game-time",
+        "features": [
+            {
+                "title" : "Material",
+                "value" : "Composite leather"
+            },
+            {
+                "title" : "Technology",
+                "value" : "Moisture management technology"
+            },
+            {
+                "title" : "Seams",
+                "value" : "Deep channel seams"
+            },
+            {
+                "title" : "Bladder",
+                "value" : "Rotationally balanced bladder"
+            },
+            {
+                "title" : "Play Type",
+                "value" : "Indoor and outdoor play"
+            },
+            {
+                "title" : "Craftmanship",
+                "value" : "Made with true love for the game"
+            }
+        ],
+        "sizes": [
+            "Men size 7, 29.5”",
+            "More sizes coming soon"
+        ]
+    },
+    {
+        "name": "Midnight Run",
+        "slug": "midnight-run",
+        "description": "Designed with love for the game, made with quality materials! Enjoy indoor and outdoor play, the soft touch and firm grip will make sure you do! The Midnight Run model actually glows in the dark after extended exposure to light! Its design is inspired by kids of all ages that slept or sleep with their ball. It comes in Men’s size 7, more sizes coming soon. The Guide Line option helps you improve your shot (check Videos Section)!<br><br>Show your ball love, and it will love you back! Take care of it by cleaning it as often as possible. Check related video in the Videos Section for instructions.",
+        "image": "media/products/midnight-run.jpg",
+        "secondImage": "media/products/midnight-run-guide-line.jpg",
+        "secondIecondImage": "media/products/midnight-run-guide-line.jpg",
+        "link": "/basketballs?product=midnight-run",
+        "features": [
+            {
+                "title" : "Material",
+                "value" : "Composite leather"
+            },
+            {
+                "title" : "Technology",
+                "value" : "Moisture management technology"
+            },
+            {
+                "title" : "Seams",
+                "value" : "Deep channel seams"
+            },
+            {
+                "title" : "Bladder",
+                "value" : "Rotationally balanced bladder"
+            },
+            {
+                "title" : "Play Type",
+                "value" : "Indoor and outdoor play"
+            },
+            {
+                "title" : "Craftmanship",
+                "value" : "Made with true love for the game"
+            }
+        ],
+        "sizes": [
+            "Men size 7, 29.5”",
+            "More sizes coming soon"
+        ]
+    },
+    {
+        "name": "ΜΟΝΟ ΧΛΑΤΣ",
+        "slug": "mono-xlatz",
+        "description": "Designed with love for the game, made with quality materials! Enjoy indoor and outdoor play, the soft touch and firm grip will make sure you do! Shooter’s Roll was founded and is based in Thessaloniki, the “Mother City” of Greek Basketball! The ΜΟΝΟ ΧΛΑΤΣ (“Swish Only” in Greek) model is inspired by the National Colors of Greece. It comes in Men’s size 7, more sizes coming soon. The Guide Line option helps you improve your shot (check Videos Section)!<br><br>Show your ball love, and it will love you back! Take care of it by cleaning it as often as possible. Check related video in the Videos Section for instructions.",
+        "image": "media/products/mono-xlatz.jpg",
+        "secondImage": "media/products/mono-xlatz.jpg",
+        "link": "/basketballs?product=mono-xlatz",
+        "features": [
+            {
+                "title" : "Material",
+                "value" : "Composite leather"
+            },
+            {
+                "title" : "Technology",
+                "value" : "Moisture management technology"
+            },
+            {
+                "title" : "Seams",
+                "value" : "Deep channel seams"
+            },
+            {
+                "title" : "Bladder",
+                "value" : "Rotationally balanced bladder"
+            },
+            {
+                "title" : "Play Type",
+                "value" : "Indoor and outdoor play"
+            },
+            {
+                "title" : "Craftmanship",
+                "value" : "Made with true love for the game"
+            }
+        ],
+        "sizes": [
+            "Men size 7, 29.5”",
+            "More sizes coming soon"
         ]
     }
 ]
