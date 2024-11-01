@@ -20,13 +20,13 @@
 
 </head>
 <body>
-    <body x-data="fetchProducts()" x-init="loadData" class="font-ubuntu ">
-        <div x-data="{ modalOpen : false }" class="bg-gradient-to-b from-zinc-200 via-zinc-400 to-zinc-400">
+    <body x-data="fetchProducts()" x-init="loadData" class="flex flex-col min-h-screen font-ubuntu">
+        <div class="bg-gradient-to-b from-zinc-200 via-zinc-400 to-zinc-400 grow">
             <div id="header"></div>
             <div id="school"></div>
-            <div id="modal"></div>
         </div>
         <div id="footer"></div>
+        <div id="modal"></div>
     </body>
     <script>
         fetchComponents([

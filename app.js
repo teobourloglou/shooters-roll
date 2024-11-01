@@ -38,6 +38,7 @@ const getProductFromURL = () => {
  */
 const fetchProduct = () => {
   return {
+      modalOpen: false,
       productFound: null,
       urlSlug: null,
       products: {},
@@ -75,6 +76,7 @@ const fetchProduct = () => {
  */
 const fetchProducts = () => {
   return {
+      modalOpen: false,
       urlSlug: null,
       products: {},
       loadData() {
